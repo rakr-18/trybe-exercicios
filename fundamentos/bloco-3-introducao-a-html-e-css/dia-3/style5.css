@@ -1,0 +1,30 @@
+div:hover{
+    border: 0,2px;
+    border-style:inset;
+    border-color: black;
+}
+
+h3 {
+    font-family: 'Inconsolata', monospace;
+}
+
+#div-1{
+    color: red;
+}
+
+#div-2{
+    color: green;
+}
+
+#div-3{
+    letter-spacing: 20px;
+    color: blue;
+}
+
+#div-4{
+    color:darkgoldenrod;
+}
+
+#div-5{
+    color: hotpink;
+}
