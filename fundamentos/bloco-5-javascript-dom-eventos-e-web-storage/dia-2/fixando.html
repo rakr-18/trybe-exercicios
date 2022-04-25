@@ -1,0 +1,53 @@
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+
+    <script>
+        console.log(document.querySelector("#elementoOndeVoceEsta").parentNode.style.color = "red");
+        document.querySelector("#primeiroFilhoDoFilho").innerText = "Olá, eu sou o filho do filho.";
+        console.log(document.querySelector("#pai").firstElementChild);
+        console.log(document.querySelector("#elementoOndeVoceEsta").previousElementSibling);
+        console.log(document.querySelector("#elementoOndeVoceEsta").nextSibling);
+        console.log(document.getElementById("elementoOndeVoceEsta").nextElementSibling)
+        console.log(document.querySelector("#pai").lastElementChild.previousElementSibling);
+    
+        let pai = document.querySelector("#pai");
+        let paiDoPai = document.querySelector("#paiDoPai");
+        let filhoDoPai = document.querySelector("#elementoOndeVoceEsta");
+        let filhoDoFilho = document.querySelector("#primeiroFilhoDoFilho");
+        let segundoFilhoDoFilho = document.querySelector("#segundoEUltimoFilhoDoFilho");
+        let terceiroFilho = document.querySelector("#terceiroFilho");
+        let quartoFilho = document.querySelector("#quartoEUltimoFilho");
+        let primeiroFilho = document.querySelector("#primeiroFilho");
+
+        let paragraph = document.createElement("p");
+        paragraph.innerText = "Eu sou irmão do elemento #elementoOndeVoceEsta";
+        pai.appendChild(paragraph);
+
+        let paragraphSon = document.createElement("p");
+        paragraphSon.innerText = "Eu sou filho do filho do pai";
+        filhoDoPai.appendChild(paragraphSon);
+
+        let paragraphFirstFilho = document.createElement("p");
+        paragraphFirstFilho.innerText = "Eu sou o filho do primeiro filho";
+        filhoDoFilho.appendChild(paragraphFirstFilho);
+
+        console.log(document.querySelector("#primeiroFilhoDoFilho").parentNode.nextElementSibling);
+    
+        pai.removeChild(primeiroFilho);
+        pai.removeChild(terceiroFilho);
+        pai.removeChild(quartoFilho);
+        filhoDoPai.removeChild(segundoFilhoDoFilho);
+
+        console.log(paiDoPai.childNodes)
+        console.log(pai.childNodes);
+    </script>
+  </main>
