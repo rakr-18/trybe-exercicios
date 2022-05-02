@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <!--Titulo da página-->
+        <title>Formulário TrybeTrip</title>
+    </head>
+    <body>
+            <header id="header">
+                <h1>Formulário da TrybeTrip</h1>
+            </header>
+
+            <main>
+                <form action="" id="form-trybe-trip" method="get">
+                    <fieldset>
+                        <!--Nome completo-->
+                        <div class="line-content">   
+                            <label for="input-name">Nome completo:</label>
+                            <input type="text" autocomplete="off" name="name" id="input-name">
+                        </div>
+
+                        <!--Email-->
+                        <div class="line-content">
+                            <label for="input-email">Email:</label>
+                            <input type="email" autocomplete="off" name="email" id="input-email">
+                        </div>
+
+                        <!--Destino-->
+                        <div class="line-content">
+                            <input type="radio" name="destiny" id="type-1" value="city">
+                            <label for="type-1">Cidade</label>
+
+                            <input type="radio" name="destiny" id="type-2" value="fiel">
+                            <label for="type-2">Campo</label>
+
+                            <input type="radio" name="destiny" id="type-3" value="beach">
+                            <label for="type-3">Praia</label>
+                                
+                            <input type="radio" name="destiny" id="type-4" value="mountains">
+                            <label for="type-4">Cidade</label>
+                        </div>
+                    </fieldset>
+                </form>
+            </main>
+    </body>
+</html>
